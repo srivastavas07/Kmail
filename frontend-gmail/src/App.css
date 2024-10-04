@@ -1,0 +1,114 @@
+body {
+    height: 100vh;
+    overflow: hidden;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --primary2: #0002;
+}
+
+.hello {
+    background-color: hsl(var(--muted));
+    border: 1px solid hsl(var(--primary));
+    color: hsl(var(--foreground));
+}
+
+.loader {
+    margin-bottom: 4px;
+    margin-left: 8px;
+    width: 2px;
+    /* Larger dot size to resemble real dots */
+    height: 2px;
+    border-radius: 50%;
+    background: hsl(var(--primary));
+    position: relative;
+    animation: l5 1s infinite linear alternate;
+}
+
+@keyframes l5 {
+    0% {
+        box-shadow: 5px 0 hsl(var(--primary)), -5px 0 var(--primary2);
+    }
+
+    33% {
+        box-shadow: 5px 0 hsl(var(--primary)), -5px 0 var(--primary2);
+        background: var(--primary2);
+    }
+
+    66% {
+        box-shadow: 5px 0 var(--primary2), -5px 0 hsl(var(--primary));
+        background: var(--primary2);
+    }
+
+    100% {
+        box-shadow: 5px 0 var(--primary2), -5px 0 hsl(var(--primary));
+        background: hsl(var(--primary));
+    }
+}
+
+.login {
+    background-color: transparent;
+    opacity: 1;
+    background-image:  radial-gradient(#ffffff1f 0.5px, transparent 0.5px), radial-gradient(#ffffff1e 0.5px, #00000000 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+}
+.logo-container{
+    border-radius: 24% 76% 32% 68% / 56% 26% 74% 44%  ;
+    animation: border-radius-animation 20s infinite linear;
+    
+}
+@keyframes border-radius-animation {
+    0% {
+      border-radius: 24% 76% 32% 68% / 56% 26% 74% 44%;
+    }
+    10% {
+      border-radius: 76% 32% 68% 24% / 26% 74% 44% 56%;
+    }
+    25% {
+      border-radius: 32% 68% 24% 76% / 74% 44% 56% 26%;
+    }
+    30% {
+      border-radius: 68% 24% 76% 32% / 44% 56% 26% 74%;
+    }
+    40% {
+      border-radius: 24% 76% 32% 68% / 56% 26% 74% 44%;
+    }
+    50% {
+      border-radius: 76% 32% 68% 24% / 26% 74% 44% 56%;
+    }
+    60% {
+      border-radius: 32% 68% 24% 76% / 74% 44% 56% 26%;
+    }
+    70% {
+      border-radius: 68% 24% 76% 32% / 44% 56% 26% 74%;
+    }
+    75% {
+      border-radius: 24% 76% 32% 68% / 56% 26% 74% 44%;
+    }
+    90% {
+      border-radius: 76% 32% 68% 24% / 26% 74% 44% 56%;
+    }
+    100% {
+      border-radius:24% 76% 32% 68% / 56% 26% 74% 44%;;
+    }
+  }
+
+.loaderPrompt{
+  width: 25px;
+  aspect-ratio: 2;
+  --_g: no-repeat radial-gradient(circle closest-side,var(--gradient) 90%,#0000);
+  background: 
+    var(--_g) 0%   50%,
+    var(--_g) 50%  50%,
+    var(--_g) 100% 50%;
+  background-size: calc(100%/3) 50%;
+  animation: l3 1s infinite linear;
+}
+@keyframes l3 {
+    20%{background-position:0%   0%, 50%  50%,100%  50%}
+    40%{background-position:0% 100%, 50%   0%,100%  50%}
+    60%{background-position:0%  50%, 50% 100%,100%   0%}
+    80%{background-position:0%  50%, 50%  50%,100% 100%}
+}

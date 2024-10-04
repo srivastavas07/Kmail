@@ -1,0 +1,213 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+      --image:url("https://www.tanaguru.com/wp-content/themes/tanaguru/images/illustrations/desktop-nuages-base.svg");
+      --gradient: #000C40;
+      --background: 243 100% 98.26%;
+      --foreground: 243 10% 0.52%;
+  
+      --muted: 243 10% 91.3%;
+      --muted-foreground: 243 5% 41.3%;
+  
+      --popover: 243 10% 91.3%;
+      --popover-foreground: 243 10% 0.65%;
+  
+      --card: 243 10% 91.3%;
+      --card-foreground: 243 10% 0.65%;
+  
+      --border: 243 15% 89.52%;
+      --input: 243 15% 89.52%;
+  
+      --primary: 243 100% 13%;
+      --primary-foreground: 243 2% 91.3%;
+  
+      --secondary: 243 5% 95.65%;
+      --secondary-foreground: 243 7% 11.3%;
+  
+      --accent: 243 5% 95.65%;
+      --accent-foreground: 243 7% 11.3%;
+  
+      --destructive: 0 84.2% 60.2%;
+      --destructive-foreground: 0 0% 98%;
+  
+      --ring: 243 100% 13%;
+  
+      --radius: 0.5rem;
+  }
+  .blue{
+    --gradient: #7DE2FC;
+    --image:url("https://t4.ftcdn.net/jpg/08/57/62/31/360_F_857623171_iK2c2l7GWPfWonhsbPhSMxNrPqPPYJta.jpg");
+    --background: 204 61.75% 5.92%;
+    --foreground: 204 9.5% 98.7%;
+
+    --muted: 204 47.5% 22.2%;
+    --muted-foreground: 204 9.5% 57.4%;
+
+    --popover: 204 46% 9.62%;
+    --popover-foreground: 204 9.5% 98.7%;
+
+    --card: 204 46% 9.62%;
+    --card-foreground: 204 9.5% 98.7%;
+
+    --border: 204 47.5% 22.2%;
+    --input: 204 47.5% 22.2%;
+
+    --primary: 204 95% 74%;
+    --primary-foreground: 204 9.5% 7.4%;
+
+    --secondary: 204 47.5% 22.2%;
+    --secondary-foreground: 204 9.5% 98.7%;
+
+    --accent: 204 47.5% 22.2%;
+    --accent-foreground: 204 9.5% 98.7%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 204 9.5% 98.7%;
+
+    --ring: 204 95% 74%;
+    --radius: 0.5rem;
+
+}
+.green{
+  --gradient: #00FF7F;
+  --image:url("https://static.vecteezy.com/system/resources/previews/007/726/078/non_2x/abstract-overlap-layer-green-contrast-background-vector.jpg");
+    --background: 159 65% 4%;
+    --foreground: 159 10% 97.5%;
+
+    --muted: 159 50% 15%;
+    --muted-foreground: 159 10% 55%;
+
+    --popover: 159 45% 6.5%;
+    --popover-foreground: 159 10% 97.5%;
+
+    --card: 159 45% 6.5%;
+    --card-foreground: 159 10% 97.5%;
+
+    --border: 159 50% 15%;
+    --input: 159 50% 15%;
+
+    --primary: 159 100% 50%;
+    --primary-foreground: 159 10% 5%;
+
+    --secondary: 159 50% 15%;
+    --secondary-foreground: 159 10% 97.5%;
+
+    --accent: 159 50% 15%;
+    --accent-foreground: 159 10% 97.5%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 159 10% 97.5%;
+
+    --ring: 159 100% 50%;
+    --radius: 0.5rem;
+
+}
+.dark{
+  --image:url("https://media.istockphoto.com/id/618316086/photo/skyward-aspen-grove.jpg?s=1024x1024&w=is&k=20&c=4Bi6E0a_cOk6XTCPDUQskOtoLlk-Pa_sh2sh0mmYKog=");
+  --background: 240 10% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 240 10% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 240 10% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 0% 98%;
+    --primary-foreground: 240 5.9% 10%;
+    --secondary: 240 3.7% 15.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 240 3.7% 15.9%;
+    --muted-foreground: 240 5% 64.9%;
+    --accent: 240 3.7% 15.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 85.7% 97.3%;
+    --border: 240 3.7% 15.9%;
+    --input: 240 3.7% 15.9%;
+    --ring: 240 4.9% 83.9%;
+    --radius:0.5rem;
+}
+.purple{
+  --gradient: #7028e4;
+    --image:url("https://img.freepik.com/premium-photo/ethereal-dreamy-pastel-background-illustration-with-flowing-violet-turquoise-liquid-generative-ai_58409-40644.jpg");
+    --background: 279 50.7% 4.24%;
+    --foreground: 279 7.800000000000001% 97.65%;
+
+    --muted: 279 39% 15.9%;
+    --muted-foreground: 279 7.800000000000001% 55.3%;
+
+    --popover: 279 49.4% 6.890000000000001%;
+    --popover-foreground: 279 7.800000000000001% 97.65%;
+
+    --card: 279 49.4% 6.890000000000001%;
+    --card-foreground: 279 7.800000000000001% 97.65%;
+
+    --border: 279 39% 15.9%;
+    --input: 279 39% 15.9%;
+
+    --primary: 279 100% 80%;
+    --primary-foreground: 279 7.800000000000001% 5.300000000000001%;
+
+    --secondary: 279 39% 15.9%;
+    --secondary-foreground: 279 7.800000000000001% 97.65%;
+
+    --accent: 279 39% 15.9%;
+    --accent-foreground: 279 7.800000000000001% 97.65%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 279 7.800000000000001% 97.65%;
+
+    --ring: 279 78% 53%;
+    --radius:0.5rem;
+}
+.yellow{
+  --image:url("https://img.freepik.com/premium-photo/orange-gradient-background-copy-space_1179130-339474.jpg");
+  --gradient: #ffe259;
+
+    --background: 53 65% 5.36%;
+    --foreground: 53 10% 98.35%;
+
+    --muted: 53 50% 20.1%;
+    --muted-foreground: 53 10% 56.7%;
+
+    --popover: 53 45% 8.71%;
+    --popover-foreground: 53 10% 98.35%;
+
+    --card: 53 45% 8.71%;
+    --card-foreground: 53 10% 98.35%;
+
+    --border: 53 50% 20.1%;
+    --input: 53 50% 20.1%;
+
+    --primary: 53 100% 67%;
+    --primary-foreground: 53 10% 6.7%;
+
+    --secondary: 53 50% 20.1%;
+    --secondary-foreground: 53 10% 98.35%;
+
+    --accent: 53 50% 20.1%;
+    --accent-foreground: 53 10% 98.35%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 53 10% 98.35%;
+
+    --ring: 53 100% 67%;
+    --radius:0.5rem;
+}
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+
+  }
+}
+.card{
+  background: var(--image);
+  background-position: center;
+  background-size: cover;
+}
