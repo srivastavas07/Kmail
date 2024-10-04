@@ -116,13 +116,16 @@ To add a new theme, update the `themes.config.js` file and adjust the CSS variab
 Below are some screenshots of the Kmail app in action:
 
 ### 1. **Login Screen**
-![Login Screen](https://drive.google.com/uc?export=view&id=1ZYZaRQHpF-V3QrR-bW_IzAyVYgCj0dBm)
+![Login Screen](./preview/login.png)
 
 ### 2. **Inbox View**
-![Inbox View](https://drive.google.com/uc?export=view&id=1iySFBcY4isTtj9z1xSOxFzFf7dh2SOZT)
+![Inbox View](./preview//inbox.png)
 
 ### 3. **Compose Email**
-![Compose Email](https://drive.google.com/uc?export=view&id=1ZYZaRQHpF-V3QrR-bW_IzAyVYgCj0dBm)
+![Compose Email](./preview/compose%20mail.png)
+
+### 4. **Themes**
+![Themes](./preview/photo-collage.png)
 
 ---
 
