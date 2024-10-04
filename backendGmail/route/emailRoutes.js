@@ -1,6 +1,6 @@
-import express from  "express";
+import express from "express";
 import { gemini } from "../controllers/gemini.js";
-import { readMails, sendMails, sentMails, searchMails, draftMails, archiveMails, junkMails, trashMails, deleteMail, archiveMail, mailBoxInfo, snoozeMail, unArchiveMail, moveToJunk, importantMails, markAsImportant, markAsRead, markAsUnread, deletePermanently, getRefreshToken, getAttachment , isAuthenticated, logout, getRecipient, createLabel } from "../controllers/emailController.js";
+import { readMails, sendMails, sentMails, searchMails, draftMails, archiveMails, junkMails, trashMails, deleteMail, archiveMail, mailBoxInfo, snoozeMail, unArchiveMail, moveToJunk, importantMails, markAsImportant, markAsRead, markAsUnread, deletePermanently, getRefreshToken, getAttachment, isAuthenticated, logout, getRecipient, createLabel } from "../controllers/emailController.js";
 const router = express.Router();
 router.route("/allEmails").get(isAuthenticated, readMails);
 router.route("/send").post(isAuthenticated, sendMails);
